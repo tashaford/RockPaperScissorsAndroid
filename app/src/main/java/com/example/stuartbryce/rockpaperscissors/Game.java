@@ -37,12 +37,16 @@ public class Game {
             return 0;
         }
         switch(playerMove){
-            case "rock" :
-                return (computerMove.equals("scissors") ? 1 : -1);
-            case "paper" :
-                return (computerMove.equals("rock") ? 1 : -1);
-            case "scissors" :
-                return (computerMove.equals("paper") ? 1 : -1);
+            case "Rock" :
+                return (computerMove.equals("Scissors") || computerMove.equals("Lizard") ? 1 : -1);
+            case "Paper" :
+                return (computerMove.equals("Rock") || computerMove.equals("Spock") ? 1 : -1);
+            case "Scissors" :
+                return (computerMove.equals("Paper") || computerMove.equals("Lizard") ? 1 : -1);
+            case "Lizard":
+                return (computerMove.equals("Spock") || computerMove.equals("Paper") ? 1 : -1);
+            case "Spock":
+                return (computerMove.equals("Scissors") || computerMove.equals("Rock") ? 1 : -1);
             default:
                 return 0;
         }
@@ -52,11 +56,11 @@ public class Game {
     protected String displayWinner(int result){
         switch(result){
             case 0:
-                return "it'ss a draw";
+                return "It's a draw";
             case 1:
-                return "it'ss a win for you";
+                return "It's a win for player";
             case -1:
-                return "ohhhh noo!";
+                return "Computer wins!";
             default :
                 return "game broken";
         }

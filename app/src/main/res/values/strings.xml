@@ -3,6 +3,10 @@
     <string name="rock_button">Rock!</string>
     <string name="paper_button">Paper!</string>
     <string name="scissors_button">Scissors!</string>
+    <string name="lizard_button">Lizard!</string>
+    <string name="spock_button">Spock!</string>
+    <string name="how_to_play">How to Play</string>
+    <string name="rules">The rules are simple: click on one of the rock, paper, scissors, lizards or Spock buttons below. The computer will also pick randomly. You will then find out who won. Now let\'s play rock, paper, scissors, lizard, Spock!!</string>
 
 
 </resources>
