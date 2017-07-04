@@ -38,11 +38,11 @@ public class Game {
         }
         switch(playerMove){
             case "rock" :
-                return (computerMove == "scissors" ? 1 : -1);
+                return (computerMove.equals("scissors") ? 1 : -1);
             case "paper" :
-                return (computerMove == "rock" ? 1 : -1);
+                return (computerMove.equals("rock") ? 1 : -1);
             case "scissors" :
-                return (computerMove == "paper" ? 1 : -1);
+                return (computerMove.equals("paper") ? 1 : -1);
             default:
                 return 0;
         }

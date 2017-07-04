@@ -5,9 +5,9 @@ package behaviours;
  */
 
 public enum Move {
-    ROCK("Rock"),
-    PAPER("Paper"),
-    SCISSORS("Scissors");
+    ROCK("rock"),
+    PAPER("paper"),
+    SCISSORS("scissors");
 
     private String type;
 
